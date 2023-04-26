@@ -6,10 +6,11 @@ header {
   width: 100%;
   top: -10;
 }
-header p {
+#title {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  margin-left: -30px;
 }
 main{
     padding-top: 120px;
