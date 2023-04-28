@@ -11,16 +11,18 @@ h6{
   color:#346B58;
 }
 
-p {
+p,
+figcaption {
   color: #649444;
 }
 header {
   background-color: #fffccc;
-  margin: -8px;
+  margin: -10px;
   margin-bottom: 15px;
   position: fixed;
   width: 100%;
   top: -10;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 header h1 {
   font-size: larger;
@@ -57,10 +59,21 @@ aside {
   padding-left: 10px;
   border-left: 2px #222 solid;
 }
+.title{
+  text-align: center;
+  margin-top: -10px;
+}
+h3.title{
+  margin-bottom: -10px;
+  margin: 0px 0;
+}
 /*button*/
+.selected{
+  background-color:#649444!important;
+  color: #fffaaa!important;
+}
 nav {
-  float: left;
-  box-shadow: gray 2px 2px 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   margin-top: -65px;
   position: fixed;
   margin-left: 10px;
@@ -69,7 +82,7 @@ nav {
 nav .drop-down {
   list-style: none;
   overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  height: 315px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  height: 360px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   background-color: whitesmoke;
   font-family: Arial;
   width: 200px;
@@ -109,6 +122,32 @@ nav .drop-down li:first-child a:after {
 nav .drop-down li a:hover {
   background-color: #fffaaa;
 }
-
 /*fim botao*/
+/*galeria*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery img {
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.gallery figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+}
+.gallery figure {
+  background-color: #fffccc;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+/*fim galeria*/
 /*#e5373a
