@@ -72,6 +72,9 @@ h3.title{
   background-color:#649444!important;
   color: #fffaaa!important;
 }
+nav:active {
+  background-color:#649444;
+}
 nav {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   margin-top: -65px;
