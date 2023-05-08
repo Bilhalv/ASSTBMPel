@@ -21,3 +21,6 @@ toggleBtns.forEach((btn) => {
     target.classList.toggle('show');
   });
 });
+
+
+window.onscroll = function() 
