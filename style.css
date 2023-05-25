@@ -119,8 +119,8 @@ nav .drop-down li a:hover {
 }
 .gallery img {
   margin: 10px;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  overflow: hidden;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
@@ -128,7 +128,7 @@ nav .drop-down li a:hover {
 .gallery figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 14px;
+  font-size: 50px;
 }
 .gallery figure {
   background-color: #fffccc;
