@@ -138,7 +138,7 @@ nav .drop-down li a:hover {
 .gallery figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 50px;
+  font-size: medium;
 }
 .gallery figure {
   background-color: #fffccc;
