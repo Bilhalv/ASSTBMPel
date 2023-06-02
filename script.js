@@ -23,4 +23,4 @@ toggleBtns.forEach((btn) => {
 });
 
 
-//https://webdesign.tutsplus.com/tutorials/how-to-hide-reveal-a-sticky-header-on-scroll-with-javascript--cms-33756
+//https://bootstrap-menu.com/detail-autohide.html
