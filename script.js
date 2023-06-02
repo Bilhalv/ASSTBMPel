@@ -21,3 +21,6 @@ toggleBtns.forEach((btn) => {
     target.classList.toggle('show');
   });
 });
+
+
+//https://webdesign.tutsplus.com/tutorials/how-to-hide-reveal-a-sticky-header-on-scroll-with-javascript--cms-33756
