@@ -1,5 +1,5 @@
-
 body {
+  margin: 0;
   background: rgb(8,0,139);
   background: linear-gradient(90deg, rgba(8,0,139,1) 0%, rgba(107,19,19,1) 50%, rgba(191,10,10,1) 100%);
 }
@@ -26,23 +26,27 @@ figcaption {
   color: #952A2A;
 }
 header {
+  overflow: hidden;
   background-color: #fffccc;
-  margin: -8px;
-  margin-bottom: 15px;
-  position: fixed;
   width: 100%;
-  top: -10;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   color: #649444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 header h1 {
+  top: 0;
   font-size: larger;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #logo{
   width: 80px;
   height: 80px;
   float: right;
-  margin-top: -85px;
   border-radius: 100%;
 }
 #title {
@@ -53,7 +57,7 @@ header h1 {
   margin: 0 auto;
 }
 main {
-  padding-top: 120px;
+  padding-top: 150px;
 }
 .title{
   text-align: center;
@@ -70,14 +74,13 @@ h3.title{
 }
 nav {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  margin-top: -65px;
-  position: fixed;
   margin-left: 10px;
   border-radius: 15px;
+  order: -1;
 }
 nav .drop-down {
   list-style: none;
-  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
+  overflow: hidden;
   height: 360px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   background-color: whitesmoke;
   font-family: Arial;
@@ -92,9 +95,6 @@ nav .drop-down {
 }
 
 nav .drop-down.closed {
-  /*  When toggled via jQuery this class will reduce the height of the ul which inconjuction
-        with overflow: hidden set on the ul will hide all list items apart from the first */
-  /* current li height 38px + 5px border */
   height: 43px;
   border-radius: 15px;
 }
@@ -104,7 +104,7 @@ nav .drop-down li a {
   color: #346b58;
   text-decoration: none;
   background-color: #fffccc;
-  padding: 12.5px; /* Larger touch target area */    
+  padding: 12.5px;  
   transition: background-color 0.8s ease;
 }
 
@@ -112,7 +112,7 @@ nav .drop-down li:first-child a:after {
   content: "\25BC";
   float: right;
   border-radius: 15px;
-  margin-left: -30px; /* Excessive -margin to bring link text back to center */
+  margin-left: -30px;
   margin-right: 5px;
 }
 
@@ -214,4 +214,15 @@ div.conv{
 #col:hover{
   background-color: #fdf691;
 }
-/*#e5373a
+/*#e5373a*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+#navbar {
+  overflow: hidden;
+}
+.header{
+  width: 100%;
+}
