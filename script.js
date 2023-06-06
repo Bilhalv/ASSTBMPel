@@ -22,5 +22,26 @@ toggleBtns.forEach((btn) => {
   });
 });
 
+// o header arrumado
 
-//https://bootstrap-menu.com/detail-autohide.html
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+  } else {
+  navbar.classList.remove("sticky");
+  }
+}
+
+function updateSticky() {
+  // Recalculate the offset after the image has loaded
+  sticky = navbar.offsetTop;
+  
+  // Call the setSticky function to update the sticky class
+  setSticky();
+}
+
+// Wait for the image to load before updating the sticky class
+window.addEventListener("load", updateSticky);
