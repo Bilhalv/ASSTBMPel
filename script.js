@@ -21,27 +21,3 @@ toggleBtns.forEach((btn) => {
     target.classList.toggle('show');
   });
 });
-
-// o header arrumado
-
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-  navbar.classList.add("sticky")
-  } else {
-  navbar.classList.remove("sticky");
-  }
-}
-
-function updateSticky() {
-  // Recalculate the offset after the image has loaded
-  sticky = navbar.offsetTop;
-  
-  // Call the setSticky function to update the sticky class
-  setSticky();
-}
-
-// Wait for the image to load before updating the sticky class
-window.addEventListener("load", updateSticky);
