@@ -115,9 +115,12 @@ nav .drop-down li:first-child a:after {
   margin-left: -30px;
   margin-right: 5px;
 }
-
 nav .drop-down li a:hover {
   background-color: #fdf691;
+}
+#navbar {
+position: sticky;
+top: 0;
 }
 /*fim botao*/
 /*galeria*/
@@ -218,7 +221,6 @@ div.conv{
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
 }
 #navbar {
   overflow: hidden;
