@@ -39,22 +39,6 @@ body {
   text-align: center;
 }
 
-.esp article a {
-  text-decoration: none;
-  color: var(--dark-green);
-  transition: 0.5s;
-  background-color: var(--light-yellow);
-  border-radius: 15px;
-  padding: 5px;
-  box-shadow: 0px 0px 5px var(--light-gray);
-  border: var(--dark-green) 2px solid;
-}
-
-.esp article a:hover {
-  background-color: var(--light-yellow-hover);
-  color: var(--dark-green);
-  border: var(--dark-green) 2px solid;
-}
 
 /* Typography Styles */
 h1, h2, h3, h4, h5, h6 {
@@ -85,6 +69,7 @@ nav {
   position: sticky;
   top: 0;
   padding: 0.5rem 1rem;
+  z-index:1000
 }
 
 nav h1 {
@@ -297,4 +282,38 @@ img.header {
   height: 30vh;
   object-fit: cover;
   object-position: 50%;
+}
+
+
+.esp article a {
+  text-decoration: none;
+  color: var(--dark-green);
+  transition: 0.5s;
+  background-color: var(--light-yellow);
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px var(--light-gray);
+  border: var(--dark-green) 2px solid;
+}
+
+.esp article a:hover {
+  background-color: var(--light-yellow-hover);
+  color: var(--dark-green);
+  border: var(--dark-green) 2px solid;
+}
+
+.esp{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.esp article{
+  width: fit-content;
+  margin: 5px 0
+}
+
+.esp article div{
+  position: relative;
 }
