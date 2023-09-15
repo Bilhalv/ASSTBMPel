@@ -8,6 +8,7 @@ import Equipe from "./pages/Equipe.jsx";
 import Esporte from "./pages/Esporte.jsx";
 import Historico from "./pages/Historico.jsx";
 import Locais from "./pages/Locais.jsx";
+import NaoEncontrado from "./pages/404.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/locais",
     element: <Locais />,
+  },
+  {
+    path: "/*",
+    element: <NaoEncontrado />,
   },
 ]);
 
