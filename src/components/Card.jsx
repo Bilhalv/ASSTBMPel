@@ -9,6 +9,7 @@ export default function Card({
   patente,
   cargo,
   localizacao,
+  periodo,
 }) {
   return (
     <>
@@ -30,7 +31,7 @@ export default function Card({
         </div>
       )}
       {type === "equipe" && (
-        <div className="w-[540px] bg-principal text-center px-4 rounded-xl shadow-md">
+        <div className="w-[540px] bg-principal text-center px-4 rounded-xl s hadow-md">
           <h1 className="py-4 text-xl">{titulo}</h1>
           <img src={img} alt="" className="w-full rounded-xl shadow-md" />
           <div className="py-4">
@@ -48,6 +49,17 @@ export default function Card({
             className="w-full rounded-xl shadow-md max-h-[500px] object-cover"
           />
           <p className="italic py-4">{localizacao}</p>
+        </div>
+      )}
+      {type === "historico" && (
+        <div className="w-[540px] bg-principal text-center px-4 rounded-xl shadow-md">
+          <h1 className="py-4 text-xl">{titulo}</h1>
+          <img
+            src={img}
+            alt=""
+            className="w-full rounded-xl shadow-md max-h-[500px] object-cover"
+          />
+          <p className="italic py-4">{periodo}</p>
         </div>
       )}
     </>

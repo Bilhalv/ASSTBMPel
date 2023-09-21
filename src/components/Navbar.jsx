@@ -1,9 +1,10 @@
 import { Button, IconButton, Menu, MenuItem } from "@mui/material";
 import {
+  AlignJustify,
   BadgeCent,
   Building,
   CreditCard,
-  DollarSign,
+  Home,
   ScrollText,
   Trophy,
   Users,
@@ -26,8 +27,9 @@ export default function Navbar({ titulo }) {
       <div className="flex gap-4">
         <button
           onClick={handleMenuClick}
-          className="bg-accent2 text-white px-12 py-4 rounded"
+          className="bg-accent2 text-white px-12 py-4 rounded flex gap-3 hover:bg-[#5c1328] transition-all-ease-in-out duration-300"
         >
+          <AlignJustify />
           Menu
         </button>
         <Menu
@@ -35,39 +37,62 @@ export default function Navbar({ titulo }) {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem onClick={handleClose}>
-            <Link to={"/"}>Início</Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/alugueis"} className="flex gap-3">
-              Aluguéis <BadgeCent />
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/convenios"} className="flex gap-3">
-              Convênios <CreditCard />
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/equipe"} className="flex gap-3">
-              Equipe <Users />
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/esportes"} className="flex gap-3">
-              Esportes <Trophy />
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/historico"} className="flex gap-3">
-              Histórico <ScrollText />
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link to={"/locais"} className="flex gap-3">
-              Locais <Building />
-            </Link>
-          </MenuItem>
+          <Link to={"/"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <Home /> Início
+            </MenuItem>
+          </Link>
+          <Link to={"/alugueis"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <BadgeCent /> Aluguéis
+            </MenuItem>
+          </Link>
+          <Link to={"/convenios"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <CreditCard /> Convênios
+            </MenuItem>
+          </Link>
+          <Link to={"/equipe"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <Users /> Equipe
+            </MenuItem>
+          </Link>
+          <Link to={"/esportes"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <Trophy /> Esportes
+            </MenuItem>
+          </Link>
+          <Link to={"/historico"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <ScrollText /> Histórico
+            </MenuItem>
+          </Link>
+          <Link to={"/locais"}>
+            <MenuItem
+              onClick={handleClose}
+              className="w-full flex gap-3 items-center justify-center transition-all-ease-in-out duration-300"
+            >
+              <Building /> Locais
+            </MenuItem>
+          </Link>
         </Menu>
       </div>
       <h1 className="text-accent3 text-3xl">{titulo}</h1>
