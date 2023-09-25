@@ -41,6 +41,15 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Check Directory Existence
+        run: |
+          if [ ! -d "./dist" ]; then
+            echo "The './dist' directory does not exist. Please check your build process."
+            exit 1
+          fi
+      - name: Fix File Permissions
+        run: |
+          chmod -c -R +rX "./dist"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
