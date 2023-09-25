@@ -1,8 +1,8 @@
 {
-  "name": "asstbmpel2",
+  "name": "asstbmpel",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://www.asstbmpel.com.br/",
+  "homepage": "asstbmpel",
   "type": "module",
   "scripts": {
     "dev": "vite",
