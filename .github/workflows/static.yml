@@ -37,6 +37,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Install Tailwindcss
+        run: npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch
       - name: Build
         run: npm run build
       - name: Setup Pages
