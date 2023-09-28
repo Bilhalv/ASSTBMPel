@@ -13,7 +13,6 @@ export default function Convenios() {
     <div>
       <Navbar titulo={"Nossos convênios disponiveis"} />
       <main className="flex flex-col items-center">
-        <h1 className="text-2xl mt-12">Nossos convênios</h1>
         <div className="my-12 z-10">
           <Accordion>
             <AccordionSummary
