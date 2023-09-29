@@ -9,6 +9,7 @@ import Esporte from "./pages/Esporte.jsx";
 import Historico from "./pages/Historico.jsx";
 import Locais from "./pages/Locais.jsx";
 import NaoEncontrado from "./pages/404.jsx";
+import '../dist/output.css'
 
 const router = createBrowserRouter([
   {
