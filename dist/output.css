@@ -602,6 +602,10 @@ video {
   width: 100%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -814,4 +818,44 @@ video {
 .hover\:bg-\[\#5c1328\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(92 19 40 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .tablet\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .tablet\:w-1 {
+    width: 0.25rem;
+  }
+
+  .tablet\:w-2 {
+    width: 0.5rem;
+  }
+
+  .tablet\:w-3 {
+    width: 0.75rem;
+  }
+
+  .tablet\:w-5 {
+    width: 1.25rem;
+  }
+
+  .tablet\:w-10 {
+    width: 2.5rem;
+  }
+
+  .tablet\:w-\[\] {
+    width: ;
+  }
+
+  .tablet\:w-\[100\%\] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:w-\[50\%\] {
+    width: 50%;
+  }
 }

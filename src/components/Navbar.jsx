@@ -96,11 +96,13 @@ export default function Navbar({ titulo }) {
         </Menu>
       </div>
       <h1 className="text-accent3 text-3xl">{titulo}</h1>
-      <img
-        src="https://i.ibb.co/C9TxP51/download.png"
-        alt="Logo"
-        className="rounded-full w-[70px]"
-      />
+      <Link to={"/"}>
+        <img
+          src="https://i.ibb.co/C9TxP51/download.png"
+          alt="Logo"
+          className="rounded-full w-[70px]"
+        />
+      </Link>
     </nav>
   );
 }

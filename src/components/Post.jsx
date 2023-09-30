@@ -10,7 +10,7 @@ export default function Post({
   info,
 }) {
   return (
-    <div className="w-[50%] bg-principal m-auto my-12 rounded-2xl px-4 shadow-sm">
+    <div className="desktop:w-[50%] w-[75%] bg-principal m-auto my-12 rounded-2xl px-4 shadow-sm">
       <h1 className="text-3xl p-4">{titulo}</h1>
       <img src={img} alt="" className="w-full rounded-2xl" />
       <h2 className="text-center py-4">{desc}</h2>
