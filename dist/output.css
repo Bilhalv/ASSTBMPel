@@ -606,6 +606,11 @@ video {
   width: 75%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -650,6 +655,10 @@ video {
   gap: 1.5rem;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -666,6 +675,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .bg-accent2 {
   --tw-bg-opacity: 1;
   background-color: rgb(114 24 50 / var(--tw-bg-opacity));
@@ -674,6 +687,11 @@ video {
 .bg-principal {
   --tw-bg-opacity: 1;
   background-color: rgb(233 217 133 / var(--tw-bg-opacity));
+}
+
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 46 80 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -687,6 +705,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-10 {
@@ -811,13 +833,41 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-\[\#5c1328\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(92 19 40 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-accent2:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 24 50 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-accent:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 46 80 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
