@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 
 export default function Locais() {
   return (
-    <div>
+    <>
       <Navbar titulo={"Locais"} />
       <main className="flex flex-wrap gap-4 items-center justify-center py-12">
         <Card
@@ -28,6 +29,7 @@ export default function Locais() {
           localizacao={"Casas disponíveis em Cidreira - RS."}
         />
       </main>
-    </div>
+      <Fotter/>
+    </>
   );
 }

@@ -1,9 +1,11 @@
 import React from "react";
 import Post from "../components/Post";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 
 function App() {
   return (
+    <>
     <main>
       <img src="https://i.ibb.co/DRyp3XH/asstbmpel.jpg" className="w-full"/>
       <Navbar titulo={"ASSTBMPel"} />
@@ -67,6 +69,8 @@ function App() {
         info="Junte-se a nós para partidas animadas de futebol! Convide seus amigos e divirta-se em nossos jogos semanais. Aproveite a oportunidade para praticar suas habilidades, fazer exercício e desfrutar de momentos de competição saudável. Todos os níveis são bem-vindos, desde iniciantes até jogadores experientes. Não perca essa chance de se divertir em campo!"
       />
     </main>
+    <Fotter/>
+    </>
   );
 }
 

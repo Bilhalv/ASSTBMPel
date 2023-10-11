@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 
 export default function Historico() {
   return (
-    <div>
+    <>
       <Navbar titulo={"Histórico de nossos presidentes"} />
       <div className="flex gap-5 flex-wrap py-12 justify-center items-center">
         <Card
@@ -98,6 +99,7 @@ export default function Historico() {
           periodo={"2016-2018"}
         />
       </div>
-    </div>
+      <Fotter/>
+    </>
   );
 }

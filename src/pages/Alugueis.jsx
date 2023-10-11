@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar titulo="Nossos locais para alugar" />
       <main className="flex justify-center items-center flex-wrap gap-12">
         <Card
@@ -36,7 +37,8 @@ function App() {
           precoSocio="400,00"
         />
       </main>
-    </div>
+      <Fotter/>
+    </>
   );
 }
 

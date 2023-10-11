@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 import { Link } from "react-router-dom";
 
 export default function Esporte() {
   return (
-    <div>
+    <>
       <Navbar titulo={"Conquistas Esportivas"} />
       <div className="flex justify-center items-center flex-col bg-principal p-5 rounded-3xl">
         <h1 className="my-4 text-3xl">Galeria de fotos</h1>
@@ -33,6 +34,7 @@ export default function Esporte() {
           ></iframe>
         </div>
       </main>
-    </div>
+      <Fotter/>
+    </>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 
 export default function Equipe() {
   return (
-    <div>
+    <>
       <Navbar titulo={"Nossa equipe atual"} />
       <main className="flex gap-5 flex-wrap py-12 justify-center items-center">
         <Card
@@ -77,6 +78,7 @@ export default function Equipe() {
           cargo={"Técnico de informática na associação"}
         />
       </main>
-    </div>
+      <Fotter/>
+    </>
   );
 }

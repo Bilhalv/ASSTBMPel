@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Fotter from "../components/Fotter";
 import {
   Accordion,
   AccordionDetails,
@@ -10,7 +11,7 @@ import { ChevronDown } from "lucide-react";
 
 export default function Convenios() {
   return (
-    <div>
+    <>
       <Navbar titulo={"Nossos convênios disponiveis"} />
       <main className="flex flex-col items-center">
         <div className="my-12 z-10">
@@ -390,6 +391,7 @@ export default function Convenios() {
           </Accordion>
         </div>
       </main>
-    </div>
+      <Fotter/>
+    </>
   );
 }
