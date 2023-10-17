@@ -3,9 +3,7 @@ export default {
   content: ["./src/**/*.{html,jsx}"],
   theme: {
     screens: {
-      'tablet': '640px',
-      'laptop': '1024px',
-      'desktop': '1280px',
+      'desktop': '1024px',
     },
     extend: {
       colors: {
