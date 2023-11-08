@@ -94,7 +94,7 @@ export default function Historico() {
         />
         <Card
           type={"historico"}
-          titulo={"Edwaldo Milbrathz Born"}
+          titulo={"Paulo Roberto Jorge Reis"}
           img={"./assets/hist/p15.jpeg"}
           periodo={"2016-2018"}
         />
