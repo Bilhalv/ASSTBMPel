@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./pages/App.jsx";
 import Alugueis from "./pages/Alugueis.jsx";
 import Convenios from "./pages/Convenios.jsx";
@@ -13,16 +13,16 @@ import '../dist/output.css'
 
 ReactDOM.render(
   <Router>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/alugueis" component={Alugueis} />
-      <Route path="/convenios" component={Convenios} />
-      <Route path="/equipe" component={Equipe} />
-      <Route path="/esporte" component={Esporte} />
-      <Route path="/historico" component={Historico} />
-      <Route path="/locais" component={Locais} />
-      <Route component={NaoEncontrado} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/alugueis" element={<Alugueis />} />
+      <Route path="/convenios" element={<Convenios />} />
+      <Route path="/equipe" element={<Equipe />} />
+      <Route path="/esporte" element={<Esporte />} />
+      <Route path="/historico" element={<Historico />} />
+      <Route path="/locais" element={<Locais />} />
+      <Route path="*" element={<NaoEncontrado />} />
+    </Routes>
   </Router>,
   document.getElementById('root')
 );
