@@ -24,7 +24,7 @@ export default function Navbar({ titulo }) {
   };
   return (
     <nav className="bg-principal flex justify-between items-center py-6 px-5 shadow-md sticky top-0 z-30">
-      <div className="flex gap-4">
+      <div className="w-full flex gap-4">
         <button
           onClick={handleMenuClick}
           className="bg-accent2 text-white px-12 py-4 rounded flex gap-3 hover:bg-[#5c1328] transition-all-ease-in-out duration-300"
@@ -95,14 +95,17 @@ export default function Navbar({ titulo }) {
           </Link>
         </Menu>
       </div>
-      <h1 className="text-accent3 text-3xl">{titulo}</h1>
-      <Link to={"/"}>
-        <img
-          src="https://i.ibb.co/C9TxP51/download.png"
-          alt="Logo"
-          className="rounded-full w-[70px]"
-        />
-      </Link>
+      <h1 className="text-accent3 w-full text-3xl text-center">{titulo}</h1>
+      <div className="w-full flex justify-between">
+        <a></a>
+        <Link className="rounded-full" to={"/"}>
+          <img
+            src="https://i.ibb.co/fCyMR6Y/icone-removebg-preview.png"
+            alt="Logo"
+            className="w-[70px]"
+          />
+        </Link>
+      </div>
     </nav>
   );
 }
