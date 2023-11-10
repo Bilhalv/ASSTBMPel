@@ -23,7 +23,7 @@ export default function Navbar({ titulo }) {
     setAnchorEl(null);
   };
   return (
-    <nav className="bg-principal flex justify-between items-center py-6 px-5 shadow-md sticky top-0 z-30">
+    <nav className="bg-principal flex justify-between items-center py-3 desktop:py-6 px-5 shadow-md sticky top-0 z-30">
       <div className="w-full flex gap-4">
         <button
           onClick={handleMenuClick}

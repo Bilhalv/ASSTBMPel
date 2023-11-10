@@ -11,7 +11,7 @@ export default function Locais() {
         <Card
           type={"locais"}
           titulo={"ASSTBMPel"}
-          img={"https://i.ibb.co/C9TxP51/download.png"}
+          img={"https://imgur.com/EKG7EHj.jpg"}
           localizacao={"Nossa sede regional de Pelotas."}
         />
 
@@ -29,7 +29,7 @@ export default function Locais() {
           localizacao={"Casas disponíveis em Cidreira - RS."}
         />
       </main>
-      <Fotter/>
+      <Fotter />
     </>
   );
 }

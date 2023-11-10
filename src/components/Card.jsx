@@ -45,8 +45,9 @@ export default function Card({
           <h1 className="py-4 text-xl">{titulo}</h1>
           <img
             src={img}
-            alt=""
-            className="w-full rounded-xl shadow-md max-h-[500px] object-cover"
+            alt={titulo}
+            className="rounded-xl shadow-md object-cover"
+            style={{ height: "500px", width: "500px" }}
           />
           <p className="italic py-4">{localizacao}</p>
         </div>
