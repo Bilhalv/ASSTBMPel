@@ -20,10 +20,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Clínica Geral</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 DR. Claudia Nogueira <br /> End. Rua Santa Cruz Nº3132
                 <br /> Tel.:(53) 3228-4768 <br />
@@ -37,10 +38,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Dentista</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Dr. Dalvio Alencar Gallas Lippert CRO 23770
                 <br />
@@ -60,10 +62,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Farmácia São Francisco</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Desc. 15% medicamentos de referência
                 <br />
@@ -81,10 +84,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Óticas Bilharva</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Desc. 25% a 15%
                 <br />
@@ -100,10 +104,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Unopar</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Desc. 20%
                 <br />
@@ -119,10 +124,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Ambulare</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 <h1 className="font-bold">Atendimento Pré-Hospitalar</h1>
                 <br />
@@ -147,12 +153,13 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>
                 The Place - English School (Escola de Inglês)
               </Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Curso de inglês com desconto de 10% nas mensalidades para
                 associados e seus dependentes.
@@ -169,10 +176,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Aula de Zumba</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Dias: terças e sextas
                 <br />
@@ -190,10 +198,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Clínica de Fisioterapia Daniela Castro</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Reabilitação-Pilates-Massoterapia
                 <br />
@@ -209,10 +218,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Fisioterapia</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Kauane Ramos
                 <br />
@@ -228,10 +238,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>NF - Embelezamento Automotivo</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 Tel.: (53) 9 9909-7295
                 <br />
@@ -247,10 +258,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Sest Senat</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 <h1 className="text-accent4 text-xl">Psicologia</h1>
                 Sessão de psicoterapia: R$ 45,00
@@ -304,10 +316,11 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>Doctor Med</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 <h1 className="text-accent4 text-xl">Especialidades Médicas</h1>
                 <br />
@@ -369,12 +382,13 @@ export default function Convenios() {
               expandIcon={<ChevronDown />}
               aria-controls="panel2a-content"
               id="panel2a-header"
+              style={{ backgroundColor: "#e9d985", borderBottom: "1px solid #96ba86" }}
             >
               <Typography>
                 DR. José Paulo Mendes e Luis Paulo Niktaszewcz (Dentista)
               </Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{backgroundColor:"#e9d985"}}>
               <Typography>
                 <ul className="list-disc px-10">
                   <li>Endontologia</li>
